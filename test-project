@@ -1,0 +1,41 @@
+#!/bin/bang 
+
+##################
+
+# author : nvrudsn
+# date : monday 29th july
+
+# this is an aws resource tracker 
+# version : V1
+
+##################
+
+# AWS EC2 instances
+# AWS IAM user
+# AWS Lambda
+# AWS S3 buckets
+
+##################
+
+set -x 
+set -e 
+set -o pipefail
+
+# AWS EC2 instances
+echo "print EC2 instances"
+aws ec2 describe-instances
+
+# AWS IAM users
+echo "print AWS IAM users"
+aws iam list-users
+
+# AWS Lmabda
+echo "list lambda"
+aws lambda-functions
+
+# AWS S3 buckets
+echo "print s3 buckets"
+aws s3 ls
+
+
+# end   
