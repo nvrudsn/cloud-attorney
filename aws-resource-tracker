@@ -29,7 +29,7 @@ aws ec2 describe-instances
 echo "print AWS IAM users"
 aws iam list-users
 
-# AWS Lmabda
+# AWS Lambda
 echo "list lambda"
 aws lambda-functions
 
